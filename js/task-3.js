@@ -9,11 +9,10 @@ let password = prompt('Введите пароль:');
 
 if (password === ADMIN_PASSWORD) {
   message = SUCCESS;
-  alert(message);
 } else if (password === null) {
   message = CANCELED;
-  alert(message);
 } else {
   message = INVALID_PASSWORD;
-  alert(message);
 }
+
+alert(message);
