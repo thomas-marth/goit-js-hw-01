@@ -5,11 +5,11 @@ const CANCELED = 'Отменено пользователем!';
 const SUCCESS = 'Добро пожаловать!';
 const INVALID_PASSWORD = 'Доступ запрещен, неверный пароль!';
 
-let password = prompt('Введите пароль:');
+let userPassword = prompt('Введите пароль:');
 
-if (password === ADMIN_PASSWORD) {
+if (userPassword === ADMIN_PASSWORD) {
   message = SUCCESS;
-} else if (password === null) {
+} else if (userPassword === null) {
   message = CANCELED;
 } else {
   message = INVALID_PASSWORD;
