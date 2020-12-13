@@ -9,4 +9,5 @@ do {
 
   input = Number(input);
 } while (true);
+
 alert(`Общая сумма чисел равна ${total}`);
