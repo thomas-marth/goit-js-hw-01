@@ -11,7 +11,7 @@ let totalPrice = Number(droidsQuantity) * pricePerDroid;
 
 if (droidsQuantity === null) {
   message = CANCELED;
-} else if (Number(droidsQuantity) * pricePerDroid > credits) {
+} else if (totalPrice > credits) {
   message = INSUFFICIENT_FUNDS;
 } else {
   credits = credits - totalPrice;
