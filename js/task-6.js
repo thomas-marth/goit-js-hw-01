@@ -1,13 +1,13 @@
-let userInput;
+let input;
 let total = 0;
 
 do {
-  userInput = prompt('Введите число');
-  total += Number(userInput);
-  if (userInput === null) {
+  input = prompt('Введите число');
+  total += Number(input);
+  if (input === null) {
     break;
   }
 
-  userInput = Number(userInput);
+  input = Number(input);
 } while (true);
 alert(`Общая сумма чисел равна ${total}`);
