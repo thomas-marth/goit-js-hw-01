@@ -3,6 +3,7 @@ let total = 0;
 do {
   let input = prompt('Введите число');
   total += Number(input);
+
   if (input === null) {
     break;
   }
