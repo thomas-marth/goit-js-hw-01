@@ -8,7 +8,7 @@ let isUserOperator = userOperator.includes('+' || '-' || '*' || '/');
 
 let result = 0;
 
-if (isUserOperator === true) {
+if (isUserOperator) {
   userFirstOperand;
 } else {
   alert('Вы ввели неверный оператор для вычисления');
