@@ -27,7 +27,7 @@ switch (userValue) {
     alert('В вашей стране доставка не доступна');
 }
 
-if (cost > 0) {
+if (cost) {
   alert(
     `Доставка в ${destination.toUpperCase()} будет стоить ${cost} кредитов`,
   );

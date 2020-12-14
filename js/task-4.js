@@ -4,17 +4,16 @@ let message;
 
 const CANCELED = 'Отменено пользователем!';
 const INSUFFICIENT_FUNDS = 'Недостаточно средств на счету!';
-const INVALID_PASSWORD = 'Доступ запрещен, неверный пароль!';
 
 let droidsQuantity = prompt('Введите количество дроидов');
 let totalPrice = Number(droidsQuantity) * pricePerDroid;
 
-if (droidsQuantity === null) {
+if (!+droidsQuantity) {
   message = CANCELED;
 } else if (totalPrice > credits) {
   message = INSUFFICIENT_FUNDS;
 } else {
-  credits = credits - totalPrice;
+  credits -= totalPrice;
   message = `Вы купили ${droidsQuantity} дроидов, на счету осталось ${credits} кредитов.`;
 }
 
